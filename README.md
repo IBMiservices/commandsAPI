@@ -20,7 +20,8 @@ The project is structured as follows:
   - `COMMANDS.BND` : Program export definition file.
   - `SERVICES.BNDDIR` : Script file to create and add entries to the binding directory.
 
-- **reference/** : Contient les fichiers d'inclusion RPGLE.
+- **reference/** : 
+  Contient les fichiers d'inclusion RPGLE.
   - `commands.RPGLEINC` : Fichier d'inclusion pour les prototypes de commandes.
   
   Contains RPGLE include files.
@@ -65,8 +66,10 @@ python install_deps.py
 Pour construire le projet, utilisez les actions configurées dans Visual Studio Code : 
 To build the project, use the configured actions in Visual Studio Code:
 
-### Build all : Construit l'ensemble du projet. Builds the entire project.
-### Build current : Construit le fichier actuellement ouvert. Builds the currently open file.
+### Build all : 
+Construit l'ensemble du projet. Builds the entire project.
+### Build current : 
+Construit le fichier actuellement ouvert. Builds the currently open file.
 
 ## Exécution des commandes / Executing Commands
 Le projet fournit une API pour exécuter des commandes CL via la procédure execCommand définie dans commands.sqlrpgle. 
