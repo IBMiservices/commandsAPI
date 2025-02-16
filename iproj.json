@@ -1,4 +1,7 @@
 {
   "description": "Program and CL Command APIs",
-  "curlib": "&CURLIB"
+  "curlib": "&CURLIB",
+  "includePath": [
+    "reference"
+  ]
 }
