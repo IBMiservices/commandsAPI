@@ -8,12 +8,11 @@ ctl-opt nomain;
 //--------------------------------------------------------------------
 Dcl-Proc execCommand export;
     Dcl-PI *N;
+        commandString  Char(32702) CONST OPTIONS(*VARSIZE);
     End-PI;
     
-    Dcl-s commandString  Varchar(32702) CONST;
-
     monitor;
-        qcmdexc( commandString : %len(commandString) );
+        qcmdexc( %trim(commandString) : %len(commandString) );
     on-error;
     endMon;    
     

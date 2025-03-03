@@ -3,5 +3,6 @@
   "curlib": "&CURLIB",
   "includePath": [
     "reference"
-  ]
+  ],
+  "buildCommand": "makei build"
 }
