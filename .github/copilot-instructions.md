@@ -86,4 +86,4 @@ execCommand('DSPLIBL');
 - This is a **library/service program project**, not a standalone application
 - The `curlib` setting uses `&CURLIB` for flexible library targeting
 - Binding directory creation in [SERVICES.BNDDIR](core/SERVICES.BNDDIR) deletes/recreates to ensure correct timestamps
-- All IBM i specific files compile on the IBM i system, not locally
+- All IBM i specific files are compiled remotely on the IBM i systemm; the local environment only orchestrates these remote compiles and does not build IBM i objects itself.
