@@ -1,0 +1,5 @@
+/* Have to delete the BNDDIR, or it will always be older than the source */
+/* because the CRTBNDDIR will fail the second time and only the ADDBNDDIRE is executed */    
+/* &BNDDIR_NAME is defined in the .env file as BNDDIR_NAME=MY_BNDDIR */ 
+!CRTBNDDIR BNDDIR(&O/&BNDDIR_NAME)
+ADDBNDDIRE BNDDIR(&O/&BNDDIR_NAME) OBJ((*LIBL/COMMANDS *SRVPGM))
